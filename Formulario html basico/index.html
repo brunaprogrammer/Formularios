@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  
+    <script type="text/javascript" src="Untitled-2.js"></script>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+  </head>
+  <body>
+
+    <h1>Formulário</h1>
+
+    <div class="formu">
+
+      <form autocomplete="on"> 
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+                  
+          <label for="name">Digite seu nome <input type="text" id="name" name="name" placeholder="Nome"  size="40" required autofocus></label>
+          &nbsp;&nbsp;        
+          <label for="age">Sua idade <input type="text" id="age" name="age" size="1" maxlength="2"></label>
+          &nbsp;&nbsp;
+          <label for="bth">Selecione seu aniversário</label>
+          <input type="date" id="bth">
+          &nbsp;&nbsp;
+          <p>Sexo: 
+            <label for="sex">Homem <input type="radio" id="sex" name="sex"></label>
+            <label for="sexo">Mulher <input type="radio" id="sexo" name="sex"></label>
+          </p>                             
+        </fieldset> 
+
+        <br>
+
+        <fieldset>
+          <legend>Informações de contato</legend>
+          <label for="email">Digite seu email <input type="email" id="email" name="email" placeholder="example@example.com"></label>
+          &nbsp;&nbsp;
+          <label for="tel">Digite seu telefone <input type="tel" id="tel" name="tel" placeholder="(99) 99999-9999"></label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Preferências</legend>
+          
+          <label for="browsers">Navegador</label>
+        <input list="browsers">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+
+          &nbsp;&nbsp;
+
+          <label for="cars">Carro</label>
+            <select name="cars" id="cars">
+              <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+
+            &nbsp;&nbsp;
+
+            <label for="fvtc">Sua cor favorita</label>
+            <input id="fvtc" type="color">
+
+            &nbsp;&nbsp;
+
+            <label for="quant">Escolha um número de 1 a 10</label>
+            <input type="number" id="quant" min="1" max="10">
+
+
+            
+         </fieldset>
+
+         <br>
+
+         <fieldset>
+           <legend>Formação</legend>
+         <label>Selecione uma ou mais opções:</label>  
+         <br>        
+         <label for="basico">Tenho ensino fundamental</label>
+         <input id="basico" type="checkbox" name="basico">
+         <label for="formacao">Tenho ensino médio</label>
+         <input id="formacao" type="checkbox" name="formacao">
+         <label for="graduado">Tenho graduação</label>
+         <input id="graduado" name="graduado" type="checkbox">
+         <label for="mestre">Tenho mestrado</label>
+         <input id="mestre" type="checkbox" name="mestre">
+         <label for="doutorado">Tenho doutorado</label>
+         <input id="doutorado" name="doutorado" type="checkbox">        
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Profissional</legend>
+
+          <label for="trab"></label>
+            <select name="trab" id="trab">
+              <option value="trab">Estou trabalhando</option>
+              <option value="trab">Estou desempregado</option>
+              <option value="trab">Trabalho mas quero mudar de emprego</option>
+            </select>
+
+            &nbsp;&nbsp;
+
+            <label for="myfile">Insira seu curriculo</label> 
+            <input type="file" id="myfile">
+
+            &nbsp;&nbsp;
+
+            <label for="tx">Numa faixa de 0 a 100 o quanto você quer este emprego? </label>
+            <input type="range" id="tx" min="0" max="100">
+
+        </fieldset>      
+
+        <br>
+
+         <fieldset>
+           <legend>Senha</legend>
+
+            <label for="psw">Digite sua senha para confirmar o envio:</label> <br>
+            <input type="password" id="psw" name="psw">
+        </fieldset>
+
+        <br>
+
+        <input type="reset" onclick="alert('Essa ação reiniciará seu formulário')">
+       
+        <input type="submit" onclick="alert('Seu formulário foi enviado com sucesso')">    
+
+      </form>
+
+  </div>
+  
+  </body>
+
+</html>
