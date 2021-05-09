@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+    outline-color: rgb(182, 179, 179);
+  }
+
+body{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 20px;
+}
+
+p{
+    margin: 0 auto;
+    width: 50%;
+    color: red;
+}
+
+fieldset{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-color: rgb(239, 239, 239);
+    width: 50%;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin: 10px 0 0 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+input{
+    text-align: center;
+    margin: 5px 0 0 10px;
+    padding: 10px 20px;
+    background-color: rgb(239, 239, 239); 
+    border: none;
+    border-radius: 8px;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botao:hover, .botaoAdd:hover{
+    background-color: rgb(182, 179, 179);
+    font-weight: bold;
+}
+
+.botao, .botaoAdd{
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 50%;
+    cursor: pointer;
+    background-color: rgb(239, 239, 239); 
+}
+
+select{
+    margin: 5px 0 0 10px;
+    height: 35px;
+    border-radius: 8px;
+    border-color: rgb(239, 239, 239);
+}
+
+.clientes-cadastrados{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.clientes-cadastrados ul{
+    border: 1px solid rgb(182, 179, 179);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 416px;
+    padding: 3px;
+    font-family: Verdana;
+}
+
+.clientes-cadastrados li{
+    list-style-type: none;
+    line-height: 22px;
+    border-top: 1px solid rgb(182, 179, 179);
+}
+
+.clientes-cadastrados button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+span{
+    color: red;
+}
+
+
