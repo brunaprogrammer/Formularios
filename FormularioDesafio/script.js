@@ -34,14 +34,6 @@ botaoAdicionar.addEventListener("click", function(e) {
         return
     }
 
-   /* console.log("passou por aqui")
-    var cliente = obtemClienteDoFormulario(form);
-    lista.push(cliente)
-
-   atualizaInterface()
-
-   form.reset(); */   
-
 });
 
 function obtemClienteDoFormulario(form) {
